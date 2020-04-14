@@ -116,7 +116,7 @@ def dollars_in_flight_for_impact(infectionTimeImpact):
   return dollars_in_flight_for_impact
 dollars = float(input("input average daily income per day for the region: "))
 dollarsInFlightForImpact = int(dollars_in_flight_for_impact(infectionTimeImpact))
-print("Dollars in flight for Impact: ",dollars_in_flight_for_impact(infectionTimeImpact))
+print("Dollars in flight for the Impact: ",dollars_in_flight_for_impact(infectionTimeImpact))
 
 
 
