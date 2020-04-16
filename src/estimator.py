@@ -3,7 +3,7 @@ def covid19_impact_estimator(reported_cases):
   return currently_infected 
 reported_cases = int(input("Enter the reported_cases: "))
 impact = covid19_impact_estimator(reported_cases)
-print("Currently infected people is ",impact)
+print("impact.currentlyInfected: ",impact)
 
 
 
@@ -11,7 +11,7 @@ def severe_impact(reported_cases):
   currently_infected = reported_cases * 50
   return currently_infected
 severeImpact = severe_impact(reported_cases)
-print("Currently infected for the severe impact is ",severeImpact)
+print("severeImpact.currentlyInfected: ",severeImpact)
 
 
 
@@ -25,7 +25,7 @@ def infections_by_requested_time_for_impact(impact):
   return infections_by_requested_time
 period = input("choose estimation period: days/weeks/months: ").lower()
 infectionTimeImpact = infections_by_requested_time_for_impact(impact)
-print("Infections by requested time for impact is: ",infectionTimeImpact)
+print("Infections by requested time for impact: ",infectionTimeImpact)
 
 
 
@@ -38,7 +38,7 @@ def infections_by_requested_time_for_severe_impact(severeImpact):
     infections_by_requested_time = severeImpact * 1024
   return infections_by_requested_time
 infectionTimeForSevereImpact = infections_by_requested_time_for_severe_impact(severeImpact)
-print("Infections by requested time for Severe Impact is: ",infectionTimeForSevereImpact)
+print("Infections by requested time for Severe Impact: ",infectionTimeForSevereImpact)
 
 
 
@@ -124,4 +124,4 @@ def dollars_in_flight_for_severe_impact(infectionTimeForSevereImpact):
   dollars_in_flight_for_severe_impact = (infectionTimeForSevereImpact * 0.65) * dollars * 30
   return dollars_in_flight_for_severe_impact
 dollarsInFlightForImpact = int(dollars_in_flight_for_severe_impact(infectionTimeForSevereImpact))
-print("Dollars in flight for Severe Impact: ",dollars_in_flight_for_severe_impact(infectionTimeForSevereImpact))
+print("Dollars in flight for the Severe Impact: ",dollars_in_flight_for_severe_impact(infectionTimeForSevereImpact))
